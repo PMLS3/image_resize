@@ -17,7 +17,7 @@ async function resizeImages(inputFolder, outputFolder1, outputFolder2) {
 
       // Resize image to 2688x1242
       const outputFilename2 = `${outputFolder2}/${file}`;
-      await sharp(inputPath).resize(1242, 2688).toFile(outputFilename2);
+      await sharp(inputPath).resize(1242, 2208).toFile(outputFilename2);
     }
 
     console.log('Image resizing completed successfully.');
